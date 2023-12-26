@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Press+Start+2P&display=swap');
+
+/* header */
+.sup_header{
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: red;
+}
+.banner{
+    background-image: url(../Assets/hero/h1_hero.jpg);
+    height: 700px;
+    width: 100%;
+}
+.banner_img img{
+    height: 700px;
+}
+.banner_text h2{
+    font-size: 80px;
+    font-family: 'Playfair Display',sans-serif;
+}
+.banner_text p{
+    font-size: 20px;
+    font-family: 'Playfair Display',sans-serif;
+}
+/* Category */
+.category_header h2{
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+.category_content h2{
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: bold;
+}
+.sup_category{
+    font-size: 15px;
+    color: rgb(0, 98, 255);
+    font-style: italic;
+}
+/* products */
+.product_header h2{
+    font-family: 'Playfair Display',sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+/* Best Products */
+.bestProducts {
+    background-image: url(../Assets/category/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.bestProductsContent h2 {
+    font-size: 50px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.bestProductsContent p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+/* Latest offers */
+.latestOffers{
+    background-image: url(../Assets/collection/latest-offer.png);
+    height: 400px;
+}
+.latestOffersContent h2 {
+    font-size: 60px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.latestOffersSubscribe p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    height: auto; 
+    margin-bottom: 10px;
+}
+/* Footer */
+
+.carafooter1 ul{
+    list-style: none; 
+}
+.carafooter1 ul li{
+    margin-bottom: 10px;
+}
+.carafooter1 ul li a:hover{
+    color: orangered;
+}
+.carafooter1 h2{
+    margin-left: 30px;
+}
+.carafooter1 a{
+    text-decoration: none;
+    color: grey;
+}
+address{
+    color: grey;
+}
+
+.carafooter2{
+    margin: 40px;
+    border-top: 1px solid grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query for Banner */
+@media screen and (max-width:1090px) {
+    .banner{
+        height: 500px;
+    }
+    .banner_img img{
+        height: 500px;
+    }
+    .banner_text h2{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:825px) {
+    .banner{
+        height: 400px;
+    }
+    .banner_img img{
+        height: 400px;
+    }
+    .banner_text h2{
+        font-size: 40px;
+    }
+    .banner_text p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:575px) {
+    .banner{
+        height: 300px;
+    }
+    .banner_img img{
+        height: 300px;
+    }
+    .banner_text h2{
+        font-size: 30px;
+    }
+    .banner_text p{
+        font-size: 10px;
+    }
+}
+

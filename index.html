@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara-Winter Collection</title>
+  <!-- Linking External CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- Linking font-awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Linking Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!--  -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./Assets/logo/Logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Latest <sup class="sup_header">Hot Deals</sup> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success me-1" type="submit"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn btn-outline-danger me-1" type="submit"><i class="fa-solid fa-heart"></i></button>
+            <button class="btn btn-outline-dark me-1" type="submit"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+              data-bs-target="#loginmodal">Login</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginmodalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- login Form -->
+          <form>
+            <img class="mb-4" src="./Assets/logo/Logo.png" alt="" width="172" height="47">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="8kfjbl">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="yoo6qo">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="form-check text-start my-3">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit" fdprocessedid="qc1a9s">Sign in</button>
+          </form>
+          <!--  -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Forgot Password?</button>
+          <button type="button" class="btn btn-primary">Register Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner Design -->
+  <div class="banner d-flex align-items-center justify-content-around">
+    <section class="banner_img">
+      <img src="./Assets/hero/hero_man.png" alt="banner_img">
+    </section>
+    <section class="banner_text">
+      <p class="text-primary fs-2 fst-italic">60% Discount</p>
+      <h2>Winter</h2>
+      <h2>Collection</h2>
+      <p class="fst-italic">Best Cloth Collection By 2023!</p>
+    </section>
+  </div>
+  <!-- Shop by Category -->
+  <div class="category_header">
+    <h2>Shop by Category</h2>
+  </div>
+  <div class="container-fluid text-center">
+    <div class="category_content row justify-content-around">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div>
+          <img src="./Assets/category/cat1.jpg" alt="cat1" class="img-fluid border">
+        </div>
+        <div>
+          <h2>Owmen'S</h2>
+          <button type="button" class="btn btn-warning">Best new Deals</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div>
+          <img src="./Assets/category/cat3.jpg" alt="cat1" class="img-fluid border">
+        </div>
+        <div>
+          <h2>Winter collections<sup class="sup_category">Discount!</sup></h2>
+          <button type="button" class="btn btn-warning">New Collections</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div>
+          <img src="./Assets/category/cat2.jpg" alt="cat1" class="img-fluid border">
+        </div>
+        <div>
+          <h2>Party Wear</h2>
+          <button type="button" class="btn btn-warning">New Designs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Latest Products -->
+  <div class="product_header">
+    <h2>Latest Products</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product1.png" class="card-img-top" alt="product1">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product2.png" class="card-img-top" alt="product2">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product3.png" class="card-img-top" alt="product3">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- second row -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product4.png" class="card-img-top" alt="product1">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product5.png" class="card-img-top" alt="product2">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="./Assets/category/product6.png" class="card-img-top" alt="product3">
+          <div class="card-body text-center">
+            <div class="card-star">
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>
+            </div>
+            <h5 class="card-text">Green Dress With Details</h5>
+            <p class="card-text">$40.00 <del class="text-danger">$60.00</del></p>
+            <a href="#" class="btn btn-outline-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Best Products -->
+  <div class="bestProducts d-flex justify-content-around align-items-center m-4 flex-wrap">
+    <div class="col-md-4 order-md-1 order-lg-0">
+      <div class="cardMan">
+        <img src="./Assets/category/card-man.png" alt="cardman" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-4 order-md-2 order-lg-1">
+      <div class="bestProductsContent">
+        <h2>Find The Best Product</h2>
+        <h2>from Our Shop</h2>
+        <p>Designers who are interested in creating their best.</p>
+        <button type="button" class="btn btn-outline-primary">Shop Now</button>
+      </div>
+    </div>
+    <div class="col-md-4 order-md-3 order-lg-2">
+      <div class="cardshape">
+        <img src="./Assets/category/card-shape.png" alt="cardshape" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <!-- Latest Offers -->
+  <div class="latestOffers d-flex justify-content-evenly align-items-center m-4 flex-wrap">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="latestOffersContent">
+        <h2>Get Our</h2>
+        <h2>Latest Offers News</h2>
+        <p>Subscribe news letters</p>
+      </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <div class="latestOffersSubscribe">
+        <input type="email" class="form-control mb-4" id="exampleFormControlInput1" placeholder="Your email here">
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <!-- Methods -->
+  <div class="methods d-flex justify-content-evenly m-4 flex-wrap justify-content-sm-center">
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="shipping bg-light">
+        <div>
+          <i class="fa-solid fa-truck-fast fs-1"></i>
+        </div>
+        <div>
+          <h2>Free Shipping Methods</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, odit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="securePayment bg-light">
+        <div>
+          <i class="fa-solid fa-lock fs-1"></i>
+        </div>
+        <div>
+          <h2>Secure Payment System</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, odit. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4">
+      <div class="easyPayment bg-light">
+        <div>
+          <i class="fa-brands fa-google-pay fs-1"></i>
+          <i class="fa-brands fa-apple-pay fs-1"></i>
+          <i class="fa-brands fa-amazon-pay fs-2"></i>
+        </div>
+        <div>
+          <h2>Easy Payment Methods</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, odit. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="gallery d-flex justify-content-center">
+    <section>
+      <img src="./Assets/gallery/gallery1.jpg" alt="gallery_img1" class="img-fluid">
+    </section>
+    <section>
+      <img src="./Assets/gallery/gallery2.jpg" alt="gallery_img2" class="img-fluid">
+    </section>
+    <section>
+      <img src="./Assets/gallery/gallery3.jpg" alt="gallery_img3" class="img-fluid">
+    </section>
+    <section>
+      <img src="./Assets/gallery/gallery4.jpg" alt="gallery_img4" class="img-fluid">
+    </section>
+    <section>
+      <img src="./Assets/gallery/gallery5.jpg" alt="gallery_img5" class="img-fluid">
+    </section>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <section class="carafooter1 m-5 row bg-light">
+      <section class="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <img src="./Assets/logo/Logo.png" alt="logo">
+          <address>
+            63,1st Floor, 16th Main,8th Cross BTM 1st Stage,BTM Layout,Bengaluru, Karnataka-560029
+          </address>
+        </div>
+      </section>
+      <section class="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Offers & Discounts</a></li>
+            <li><a href="#">Get Coupon</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <h2>New Products</h2>
+          <ul>
+            <li><a href="#">Woman Clothes</a></li>
+            <li><a href="#">Fashion Accessories</a></li>
+            <li><a href="#">Man Accessories</a></li>
+            <li><a href="#">Rubber made Toys</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <h2>Supports</h2>
+          <ul>
+            <li><a href="#">Frequently Asked Questions</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Chat with us</a></li>
+            <li><a href="#">Report a Payment Issue</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+    <section class="carafooter2 d-flex justify-content-center">
+      <p class="mt-4">Copyright <i class="fa-regular fa-copyright"></i> 2023 All rights reserved | This template is made
+        with <i class="fa-solid fa-heart text-primary"></i> by Mr. Somesh Kumar</p>
+    </section>
+  </footer>
+</body>
+
+</html>
