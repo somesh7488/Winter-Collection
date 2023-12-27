@@ -1,51 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Press+Start+2P&display=swap');
 
 /* header */
-.sup_header{
+.sup_header {
     color: white;
     border: 1px solid red;
     border-radius: 5px;
     background-color: red;
 }
-.banner{
+
+.banner {
     background-image: url(../Assets/hero/h1_hero.jpg);
     height: 700px;
     width: 100%;
 }
-.banner_img img{
+
+.banner_img img {
     height: 700px;
 }
-.banner_text h2{
+
+.banner_text h2 {
     font-size: 80px;
-    font-family: 'Playfair Display',sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
-.banner_text p{
+
+.banner_text p {
     font-size: 20px;
-    font-family: 'Playfair Display',sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
+
 /* Category */
-.category_header h2{
-    font-family: 'Playfair Display',sans-serif;
+.category_header h2 {
+    font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 50px;
 }
-.category_content h2{
-    font-family: 'Playfair Display',sans-serif;
+
+.category_content h2 {
+    font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
 }
-.sup_category{
+
+.sup_category {
     font-size: 15px;
     color: rgb(0, 98, 255);
     font-style: italic;
 }
+
 /* products */
-.product_header h2{
-    font-family: 'Playfair Display',sans-serif;
+.product_header h2 {
+    font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 100px 0 50px 0;
 }
+
 /* Best Products */
 .bestProducts {
     background-image: url(../Assets/category/card.png);
@@ -65,11 +74,13 @@
     font-size: 20px;
     font-style: italic;
 }
+
 /* Latest offers */
-.latestOffers{
+.latestOffers {
     background-image: url(../Assets/collection/latest-offer.png);
     height: 400px;
 }
+
 .latestOffersContent h2 {
     font-size: 60px;
     font-family: 'Playfair Display', sans-serif;
@@ -78,38 +89,44 @@
 .latestOffersSubscribe p {
     font-family: 'Playfair Display', sans-serif;
     font-size: 30px;
-    
+
 }
 
 /* Gallery */
 .gallery img {
     width: 100%;
-    height: auto; 
+    height: auto;
     margin-bottom: 10px;
 }
+
 /* Footer */
 
-.carafooter1 ul{
-    list-style: none; 
+.carafooter1 ul {
+    list-style: none;
 }
-.carafooter1 ul li{
+
+.carafooter1 ul li {
     margin-bottom: 10px;
 }
-.carafooter1 ul li a:hover{
+
+.carafooter1 ul li a:hover {
     color: orangered;
 }
-.carafooter1 h2{
+
+.carafooter1 h2 {
     margin-left: 30px;
 }
-.carafooter1 a{
+
+.carafooter1 a {
     text-decoration: none;
     color: grey;
 }
-address{
+
+address {
     color: grey;
 }
 
-.carafooter2{
+.carafooter2 {
     margin: 40px;
     border-top: 1px solid grey;
 }
@@ -123,53 +140,107 @@ address{
 
 
 /* Payment */
-.payment{
+.payment {
     width: 30%;
     margin: 0 auto;
-    
+
 }
 
+/* User Registration */
+.userRegistration form input {
+    margin: 3px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 7px;
+}
 
+.userRegistration h2 {
+    text-align: center;
+}
 
+.userRegistration form {
+    text-align: center;
+}
+
+.userRegistration p {
+
+    text-align: center;
+}
+
+#submit {
+    width: 100px;
+    background-color: rgb(30, 24, 215);
+    color: white;
+    border: none;
+}
+
+.constraints {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#username_error,
+#email_error,
+#password_error,
+#telephone_error {
+    display: none;
+    color: red;
+}
+
+/* contact US */
+.contactus .contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+  }
 
 /* media query for Banner */
 @media screen and (max-width:1090px) {
-    .banner{
+    .banner {
         height: 500px;
     }
-    .banner_img img{
+
+    .banner_img img {
         height: 500px;
     }
-    .banner_text h2{
+
+    .banner_text h2 {
         font-size: 60px;
     }
 }
+
 @media screen and (max-width:825px) {
-    .banner{
+    .banner {
         height: 400px;
     }
-    .banner_img img{
+
+    .banner_img img {
         height: 400px;
     }
-    .banner_text h2{
+
+    .banner_text h2 {
         font-size: 40px;
     }
-    .banner_text p{
+
+    .banner_text p {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:575px) {
-    .banner{
+    .banner {
         height: 300px;
     }
-    .banner_img img{
+
+    .banner_img img {
         height: 300px;
     }
-    .banner_text h2{
+
+    .banner_text h2 {
         font-size: 30px;
     }
-    .banner_text p{
+
+    .banner_text p {
         font-size: 10px;
     }
 }
-
